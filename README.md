@@ -24,10 +24,16 @@ https://docs.google.com/spreadsheets/d/1S4_3E958WczIXtIEcb4sxrOB6a3Sy5ckz0j0S8_x
 
 ```bash
 npm install
+```
 
-1.Open Cypress Test Runner:
+2.Open Cypress Test Runner:
+
+```bash
 npx cypress open
+```
 
-2.Run tests in headless mode:
+3.Run tests in headless mode:
+
+```bash
 npx cypress run
 ```
