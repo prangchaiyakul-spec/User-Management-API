@@ -1,0 +1,65 @@
+[
+  {
+    "id": "TC-USER-001",
+    "scenario": "Positive: Create user successfully with valid data",
+    "name": "Prang_QA",
+    "job": "Automation_Engineer",
+    "email": "prang@test.com",
+    "expectedStatus": 201,
+    "expectedMessage": "success"
+  },
+  {
+    "id": "TC-USER-002",
+    "scenario": "Negative: Block when Name is empty",
+    "name": "",
+    "job": "Developer",
+    "email": "dev@test.com",
+    "expectedStatus": 400,
+    "expectedMessage": "Name is required"
+  },
+  {
+    "id": "TC-USER-003",
+    "scenario": "Negative: Block when Job is empty",
+    "name": "Jane_Doe",
+    "job": "",
+    "email": "jane@test.com",
+    "expectedStatus": 400,
+    "expectedMessage": "Job title is required"
+  },
+  {
+    "id": "TC-USER-004",
+    "scenario": "Negative: Block when Email format is invalid",
+    "name": "John_Smit",
+    "job": "Designer",
+    "email": "john_at_test.com",
+    "expectedStatus": 400,
+    "expectedMessage": "Invalid email format"
+  },
+  {
+    "id": "TC-USER-005",
+    "scenario": "Negative: Block when Email is duplicated",
+    "name": "New_User",
+    "job": "Tester",
+    "email": "prang@test.com",
+    "expectedStatus": 400,
+    "expectedMessage": "Email already exists"
+  },
+  {
+    "id": "TC-USER-006",
+    "scenario": "Negative: Block when Name contains special characters",
+    "name": "Pr@ng_!#$",
+    "job": "DevOps",
+    "email": "special@test.com",
+    "expectedStatus": 400,
+    "expectedMessage": "Name contains invalid characters"
+  },
+  {
+    "id": "TC-USER-007",
+    "scenario": "Negative: Block when all fields are empty",
+    "name": "",
+    "job": "",
+    "email": "",
+    "expectedStatus": 400,
+    "expectedMessage": "All fields are required"
+  }
+]
